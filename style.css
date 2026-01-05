@@ -1,0 +1,258 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* تنسيقات القوائم */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* تنسيقات البطاقات */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    font-weight: 600;
+}
+
+/* تنسيقات الأزرار */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #4361ee;
+    border-color: #4361ee;
+}
+
+.btn-primary:hover {
+    background-color: #3a56d4;
+    border-color: #3a56d4;
+}
+
+/* تنسيقات الجداول */
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    border-top: none;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+/* تنسيقات الأيقونات */
+.icon-lg {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+/* تنسيقات التنبيهات */
+.alert {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1.25rem;
+}
+
+.alert-dismissible .btn-close {
+    padding: 1rem 1.25rem;
+}
+
+/* تنسيقات النماذج */
+.form-control, .form-select {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4361ee;
+    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+}
+
+/* تنسيقات البطاقات الإحصائية */
+.card.bg-primary, 
+.card.bg-success, 
+.card.bg-info, 
+.card.bg-warning {
+    color: #fff;
+}
+
+.card-footer {
+    background-color: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* تنسيقات قائمة التنقل الجانبية */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0;
+    margin: 0.2rem 0;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link.active {
+    background-color: #f8f9fa;
+    color: #4361ee;
+}
+
+.sidebar .nav-link i {
+    margin-left: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* تنسيقات الصفحة الرئيسية */
+.main-content {
+    margin-right: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+/* تنسيقات للهواتف */
+@media (max-width: 991.98px) {
+    .sidebar {
+        right: -250px;
+    }
+    
+    .sidebar.show {
+        right: 0;
+    }
+    
+    .main-content {
+        margin-right: 0;
+    }
+}
+
+/* تنسيقات إضافية للواجهة العربية */
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* تنسيقات للأزرار في الجداول */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* تنسيقات البادجات */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.6em;
+}
+
+/* تنسيقات العناوين */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* تنسيقات الروابط */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* تنسيقات الحقول المطلوبة */
+.required:after {
+    content: ' *';
+    color: #dc3545;
+}
+
+/* تنسيقات رسائل الخطأ */
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+/* تنسيقات للأشكال */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* تنسيقات للأزرار في أشكال */
+.form-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* تنسيقات للبطاقات الداخلية */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* تنسيقات للجداول المستجيبة */
+.table-responsive {
+    border-radius: 5px;
+}
+
+/* تنسيقات للبطاقات في لوحة التحكم */
+.dashboard-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-card .card-body {
+    flex: 1;
+}
+
+/* تنسيقات للأيقونات في القوائم */
+.nav-link i {
+    margin-left: 0.5rem;
+}
+
+/* تنسيقات للعناوين الفرعية */
+.subheader {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
